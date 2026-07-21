@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  background-color: #0D1B2A;
+  color: #ffffff;
+}
+
+:root {
+  --dark-navy: #0D1B2A;
+  --electric-blue: #3A86FF;
+  --white: #ffffff;
+  --light-gray: #E8E8E8;
+}
+
+a {
+  color: var(--electric-blue);
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: var(--electric-blue);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(58, 134, 255, 0.3);
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid var(--electric-blue);
+  color: var(--electric-blue);
+}
+
+.btn-secondary:hover {
+  background: var(--electric-blue);
+  color: var(--white);
+}
+
+input, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #1e3a5f;
+  background-color: #162038;
+  color: #ffffff;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: var(--electric-blue);
+  box-shadow: 0 0 10px rgba(58, 134, 255, 0.3);
+}
